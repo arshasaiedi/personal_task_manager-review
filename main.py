@@ -3,7 +3,7 @@ from dotenv import load_dotenv
 import os
 load_dotenv()
 
-name = input("enter your name: ")
+name = input("enter your name: ") 
 print("welcome", name)
 
 admin_mode = input("do you want to enter admin mode? (yes/no): ")
@@ -17,7 +17,12 @@ if admin_mode.lower() == "yes":
 tasks = load_tasks()
 count = int(input("how many tasks do you want to add? :"))
 for i in range(count):
-    task = input("enter your task: ")
+    task_name = input("enter your task: ")
+    priority = input("enter your task priority (high/medium/low): ").lower()
+    task = {
+    "name": task_name, 
+    "priority": priority
+    }
     tasks.append(task)
 
 show_tasks(tasks)
