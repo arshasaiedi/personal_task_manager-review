@@ -1,13 +1,20 @@
 # Personal Task Manager
 ![Static Badge](https://img.shields.io/badge/python-blue?logo=python&logoColor=white)
 
-A simple task manager built with python
+A simple task manager built with Python
 
 ## Features
 - add multiple tasks
 - save tasks
 - load saved tasks
 - admin mode
+- set task priority
+
+## Task Priority
+each task can have one of these priority levels:
+- low
+- medium
+- high
   
 ## Requirments
 - python
@@ -33,7 +40,7 @@ Install the required packages
 ```bash
 python -m pip install requirments.txt
 ```
-## Enviroment setup
+## Enviroment Setup
 create a `.env` file in the project folder
 
 Use `.env.example` as a template
